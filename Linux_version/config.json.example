@@ -1,0 +1,45 @@
+{
+  "scraping": {
+    "crawl_cities": ["上海", "香港", "东京"],
+    "begin_date": null,
+    "end_date": null,
+    "start_interval": 1,
+    "crawl_days": 60,
+    "days_interval": 1,
+    "crawl_interval": 1,
+    "max_wait_time": 10,
+    "max_retry_time": 5,
+    "direct_flight_only": true,
+    "include_comfort_data": false,
+    "delete_unimportant_info": false,
+    "rename_columns": true
+  },
+  "proxy": {
+    "enabled": true,
+    "ipv6_count": 120,
+    "base_interface": "eth0",
+    "ip_mode": "normal",
+    "delete_interface": false
+  },
+  "login": {
+    "allowed": true,
+    "accounts": ["your_account1", "your_account2"],
+    "passwords": ["your_password1", "your_password2"],
+    "cookies_file": "cookies.json",
+    "required_cookies": [
+      "AHeadUserInfo",
+      "DUID",
+      "IsNonUser",
+      "_udl",
+      "cticket",
+      "login_type",
+      "login_uid"
+    ]
+  },
+  "debug": {
+    "enable_screenshot": false,
+    "log_level": "INFO",
+    "log_file": null
+  }
+}
+
