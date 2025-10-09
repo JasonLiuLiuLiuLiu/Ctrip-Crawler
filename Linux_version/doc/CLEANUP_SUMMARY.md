@@ -6,6 +6,10 @@
 - ✅ `ctrip_flights_scraper_V3.5.py` (1530行) - Linux_version目录下的原始大文件
 - ✅ `ctrip_flights_scraper_V3.py` (1503行) - 根目录下的旧版本文件
 
+### 2. 重构后不再使用的文件
+- ✅ `gen_proxy_servers.py` (299行) - 原始代理服务器文件（已被gen_proxy_servers_v2.py替代）
+- ✅ `test_proxy_refactor.py` (200行) - 代理重构测试文件（测试已完成）
+
 **删除原因：**
 - 这些文件已经被完全重构为模块化结构
 - 功能完全被新的模块化代码替代
@@ -14,7 +18,7 @@
 ## 保留的文件
 
 ### 1. 核心功能文件
-- ✅ `gen_proxy_servers.py` - 代理服务器模块（仍在使用）
+- ✅ `gen_proxy_servers_v2.py` - 重构后的代理服务器模块（当前使用）
 - ✅ `csv_to_xlsx_converter.py` - CSV转换工具（独立功能）
 
 ### 2. 重构后的模块

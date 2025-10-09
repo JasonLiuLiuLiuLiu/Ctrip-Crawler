@@ -8,7 +8,7 @@ import threading
 import time
 from typing import List, Tuple
 
-import gen_proxy_servers
+import gen_proxy_servers_v2 as gen_proxy_servers
 from config import config, load_config_from_file
 from utils import setup_logging, kill_driver_processes, generate_city_pairs, generate_flight_dates
 from flight_scraper import FlightScraper
@@ -61,11 +61,13 @@ class CtripFlightScraperApp:
             self.proxy_thread = threading.Thread(
                 target=lambda: gen_proxy_servers.run_proxy(
                     mode=config.proxy.ip_mode,
-                    port=1080,
-                    bind_address="0.0.0.0",
+                    port=config.proxy.proxy_port,
+                    bind_address=config.proxy.proxy_bind_address,
                     base_interface=config.proxy.base_interface,
                     num_interfaces=config.proxy.ipv6_count,
-                    delete_iface=config.proxy.delete_interface
+                    delete_iface=config.proxy.delete_interface,
+                    control_port=config.proxy.control_port,
+                    control_bind=config.proxy.control_bind_address
                 ),
                 daemon=True
             )

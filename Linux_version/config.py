@@ -47,6 +47,15 @@ class ProxyConfig:
     base_interface: str = "eth0"
     ip_mode: str = "normal"  # "random" or "normal"
     delete_interface: bool = False
+    
+    # New proxy server settings
+    proxy_port: int = 1080
+    proxy_bind_address: str = "0.0.0.0"
+    control_port: int = 1081
+    control_bind_address: str = "127.0.0.1"
+    test_address: str = "2400:3200::1"
+    max_retries: int = 3
+    timeout: int = 5
 
 
 @dataclass

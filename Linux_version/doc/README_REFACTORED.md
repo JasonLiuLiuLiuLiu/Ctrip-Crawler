@@ -16,7 +16,7 @@ Linux_version/
 ├── page_handler.py            # 页面操作处理
 ├── data_processor.py          # 数据处理
 ├── flight_scraper.py          # 主爬虫类
-├── gen_proxy_servers.py       # 代理服务器（原有）
+├── gen_proxy_servers_v2.py    # 代理服务器（重构后）
 ├── config.json.example        # 配置文件示例
 ├── requirements.txt           # 依赖包
 └── README_REFACTORED.md       # 本文档
