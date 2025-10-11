@@ -1,0 +1,107 @@
+# Configuration files with sensitive information
+# 包含敏感信息的配置文件
+config.json
+cookies.json
+*.cookies
+
+# Python virtual environment
+# Python 虚拟环境
+venv/
+env/
+ENV/
+.venv/
+
+# Python compiled files
+# Python 编译文件
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+# 分发/打包
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Data files
+# 数据文件
+data/
+*.csv
+*.xlsx
+*.xls
+*.json.bak
+
+# Log files
+# 日志文件
+logs/
+*.log
+*.log.*
+
+# Screenshots and media
+# 截图和媒体文件
+screenshot/
+screenshots/
+*.png
+*.jpg
+*.jpeg
+*.gif
+
+# Cookie storage
+# Cookie 存储
+cookies/
+
+# IDE specific files
+# IDE 特定文件
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# System files
+# 系统文件
+Thumbs.db
+desktop.ini
+
+# Temporary files
+# 临时文件
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# Chrome/ChromeDriver related
+# Chrome/ChromeDriver 相关
+chromedriver
+chromedriver.exe
+chrome-profile/
+
+# Network interface scripts (if generated)
+# 网络接口脚本（如果生成）
+proxy/generated_*
+*.pid
+
+# Test files
+# 测试文件
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
