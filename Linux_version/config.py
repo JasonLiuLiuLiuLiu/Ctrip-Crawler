@@ -85,6 +85,7 @@ class DebugConfig:
     enable_screenshot: bool = False
     log_level: str = "INFO"
     log_file: Optional[str] = None
+    headless: bool = True  # Run browser in headless mode
 
 
 @dataclass

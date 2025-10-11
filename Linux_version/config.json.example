@@ -39,7 +39,8 @@
   "debug": {
     "enable_screenshot": false,
     "log_level": "INFO",
-    "log_file": null
+    "log_file": null,
+    "headless": true
   }
 }
 

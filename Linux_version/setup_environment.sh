@@ -148,6 +148,22 @@ fi
 # Clean up
 rm -f "/tmp/$CHROME_DEB"
 
+# Install additional dependencies for headed mode (optional)
+log_info "Installing optional dependencies for headed mode..."
+apt-get install -y \
+    xvfb \
+    x11-utils \
+    xauth \
+    libxss1 \
+    libappindicator3-1 \
+    libasound2 \
+    libatk-bridge2.0-0 \
+    libgtk-3-0 \
+    libgbm1 \
+    libnss3 || log_warning "Some optional packages could not be installed (non-critical)"
+
+log_success "Optional dependencies installed (for headed mode support)"
+
 ###############################################################################
 # Step 5: Install ChromeDriver
 ###############################################################################
